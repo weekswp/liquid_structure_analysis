@@ -1,0 +1,4 @@
+Coordination number counts:
+11 62
+12 52
+13 28

@@ -1,0 +1,1 @@
+python generate_clusters_for_alignment.py Cu64Zr37_1450K.xyz

@@ -1,0 +1,14 @@
+Data for split groups (numbered). Note that the number of folders in this directory is a direct result of the number of atoms in the initial .xyz file (`Liquid Analysis/create_clusters/Cu64Zr36_1450K.xyz`) and that the number of folders in this directory will change accordingly if the size of the split groups or the size of the initial file is changed. In our case, each split group had a maximum of 1,000 structures randomly selected from the original set.
+# Clusters directory:
+Within each group, the `clusters/` folder contains 10 sample files that would be created as a result of step 1 of the procedure provided in the `Liquid Analysis/` directory. These samples are provided as examples but there would typically be 1,000 .xyz files in each of the `clusters/` directories.
+# Results directory:
+Note that, within each group folder, there are no `results` directories. This is due to the large size of these files. For examples of what these files will look like, please see the example files in the `../Combined/results` directory. The files will have the form of "#.xyz.json" where # refers to the cluster number. These files would usually be created in step 2 of the provcedure provided in the `Liquid Analysis/` directory.
+# Errors directory:
+Within each group, the `errors/` folder contains 10 sample files that would be created as a result of step 2 in the procedure provided in the `Liquid Analysis/` directory. These samples are provided as examples, but as with the clusters, there would typically be 1,000 error files created (one for each cluster). Moreover, these files are in the form of numpy arrays.
+# Affinities directory:
+Within each group, the `affinities/` folder contains the data resulting from step 3 of the procedure provided in the `Liquid Analysis/` directory. See the `Liquid Analysis/clustering` directory for details on this process and the resultant files. In short, this folder contains the combinations of all error files and the results of the resultant HDBSCAN clustering. Note that each of the affinity .npy arrays contains the condensed data from the error extraction of all 1,000 structures in a given split group.
+# Motifs directory:
+Within each group, the `motifs/` folder contains the data resulting from step 4 of the procedure provided in the `Liquid Analysis/` directory. See the `Liquid Analysis/analyze_results/` directory for details on this process and the resultant files. This folder is the storage location for the "most representative" structures of each HDBSCAN group where "most representative" is determined to be the structure in the group with the LOWEST AVERAGE DISSIMILARITY to all other structures in the group.
+
+
+Recall that all of this data is for the "split" system and, from this point on, we will "recombine" all of the motifs and continue our discussion of the data flow in the `../Recombined/` directory.

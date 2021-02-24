@@ -1,0 +1,18 @@
+{
+  "L2": {
+    "set_to_inf_before_dividing": 0.3100041557736022,
+    "divide_by": 0.0496324011980329
+  },
+  "L1": {
+    "set_to_inf_before_dividing": 1.3159292751758662,
+    "divide_by": 0.24180397696669326
+  },
+  "Linf": {
+    "set_to_inf_before_dividing": 3.721775219799521,
+    "divide_by": 0.45166561017373447
+  },
+  "angular": {
+    "set_to_inf_before_dividing": 51.782337197339004,
+    "divide_by": 8.523657406182274
+  }
+}

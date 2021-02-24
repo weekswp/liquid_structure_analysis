@@ -1,0 +1,37 @@
+#!/bin/bash
+sh ./run_analysis_1.sh
+sh ./run_analysis_2.sh
+sh ./run_analysis_3.sh
+sh ./run_analysis_4.sh
+sh ./run_analysis_5.sh
+sh ./run_analysis_6.sh
+sh ./run_analysis_7.sh
+sh ./run_analysis_8.sh
+sh ./run_analysis_9.sh
+sh ./run_analysis_10.sh
+sh ./run_analysis_11.sh
+sh ./run_analysis_12.sh
+sh ./run_analysis_13.sh
+sh ./run_analysis_14.sh
+sh ./run_analysis_15.sh
+sh ./run_analysis_16.sh
+sh ./run_analysis_17.sh
+sh ./run_analysis_18.sh
+sh ./run_analysis_19.sh
+sh ./run_analysis_20.sh
+sh ./run_analysis_21.sh
+sh ./run_analysis_22.sh
+sh ./run_analysis_23.sh
+sh ./run_analysis_24.sh
+sh ./run_analysis_25.sh
+sh ./run_analysis_26.sh
+sh ./run_analysis_27.sh
+sh ./run_analysis_28.sh
+sh ./run_analysis_29.sh
+sh ./run_analysis_30.sh
+sh ./run_analysis_31.sh
+sh ./run_analysis_32.sh
+sh ./run_analysis_33.sh
+sh ./run_analysis_34.sh
+sh ./run_analysis_35.sh
+
