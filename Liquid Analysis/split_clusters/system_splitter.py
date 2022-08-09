@@ -26,7 +26,7 @@ def main():
         unallocated_atoms.append(i)
     for j in range(1,limit):
         os.chdir(split_dir)
-        if os.path.isdir(str(i)) == False:
+        if os.path.isdir(str(j)) == False:
             os.mkdir(str(j))
         os.chdir(str(j))
         if os.path.isdir("data") == False:
@@ -58,7 +58,7 @@ def main():
 #unallocated_atoms: The new unallocated list is returned and is, at most, split_size smaller than the input array.
 def copy_set(size,split_size,unallocated_atoms,rep):
     start_count = (rep*split_size) - split_size
-    for i in range(start,start+split_size):
+    for i in range(start_count,start_count+split_size):
         if i < size:
             current_unallocated = len(unallocated_atoms)
             selection = unallocated_atoms[random.randint(0,current_unallocated-1)]
@@ -76,7 +76,6 @@ def copy_set(size,split_size,unallocated_atoms,rep):
         filename = str(file)
         new_name = str(local_count)+".xyz"
         os.rename(filename,new_name)
-        rep_correlation[new_name] = filename
         local_count += 1
     return unallocated_atoms
 
